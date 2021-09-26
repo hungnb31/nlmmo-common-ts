@@ -1,16 +1,16 @@
 import { Injectable } from "@nestjs/common";
 import update from "lodash.update";
 
-import { AccountSetting } from "@interfaces/account-setting.interface";
-import { Admin } from "@interfaces/admin.interface";
-import { Affiliate } from "@interfaces/affiliate.interface";
-import { Category } from "@interfaces/category.interface";
-import { Session } from "@interfaces/session.interface";
-import { Shop } from "@interfaces/shop.interface";
-import { SystemTransaction } from "@interfaces/system-transaction.interface";
-import { UserCard } from "@interfaces/user-card.interface";
-import { User } from "@interfaces/user.interface";
-import { Wallet } from "@interfaces/wallet.interface";
+import { IAccountSetting } from "@interfaces/account-setting.interface";
+import { IAdmin } from "@interfaces/admin.interface";
+import { IAffiliate } from "@interfaces/affiliate.interface";
+import { ICategory } from "@interfaces/category.interface";
+import { ISession } from "@interfaces/session.interface";
+import { IShop } from "@interfaces/shop.interface";
+import { ISystemTransaction } from "@interfaces/system-transaction.interface";
+import { IUserCard } from "@interfaces/user-card.interface";
+import { IUser } from "@interfaces/user.interface";
+import { IWallet } from "@interfaces/wallet.interface";
 import { Entity } from "@constants/entity.constants";
 
 @Injectable()
@@ -44,7 +44,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE AFFILIATE
-  sanitizeAffiliate(affiliate: Affiliate): any {
+  sanitizeAffiliate(affiliate: IAffiliate): any {
     return {
       id: affiliate._id,
       referralFrom: affiliate.referralFrom,
@@ -56,7 +56,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE USER
-  sanitizeUser(user: User): any {
+  sanitizeUser(user: IUser): any {
     return {
       id: user._id,
       name: user.name,
@@ -77,7 +77,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE ADMIN
-  sanitizeAdmin(admin: Admin): any {
+  sanitizeAdmin(admin: IAdmin): any {
     return {
       id: admin._id,
       username: admin.username,
@@ -96,7 +96,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE ACCOUNT SETTING
-  sanitizeAccountSetting(accountSetting: AccountSetting): any {
+  sanitizeAccountSetting(accountSetting: IAccountSetting): any {
     return {
       id: accountSetting._id,
       verifyEmail: accountSetting.verifyEmail,
@@ -109,7 +109,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE CATEGORY
-  sanitizeCategory(category: Category): any {
+  sanitizeCategory(category: ICategory): any {
     return {
       id: category._id,
       title: category.title,
@@ -120,7 +120,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE SESSION
-  sanitizeSession(session: Session): any {
+  sanitizeSession(session: ISession): any {
     return {
       id: session._id,
       ip: session.ip,
@@ -132,7 +132,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE SHOP
-  sanitizeShop(shop: Shop): any {
+  sanitizeShop(shop: IShop): any {
     return {
       id: shop._id,
       name: shop.name,
@@ -145,7 +145,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE SYSTEM TRANSACTION
-  sanitizeSystemTransaction(systemTransaction: SystemTransaction): any {
+  sanitizeSystemTransaction(systemTransaction: ISystemTransaction): any {
     return {
       id: systemTransaction._id,
       sender: systemTransaction.sender,
@@ -159,7 +159,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE USER CARD
-  sanitizeUserCard(userCard: UserCard): any {
+  sanitizeUserCard(userCard: IUserCard): any {
     return {
       id: userCard._id,
       shop: userCard.shop,
@@ -171,7 +171,7 @@ export class Helpers {
 
   // ---------------------------------------------------------------
   // SANITIZE WALLET
-  sanitizeWallet(wallet: Wallet): any {
+  sanitizeWallet(wallet: IWallet): any {
     return {
       id: wallet._id,
       whichOwner: wallet.whichOwner,
