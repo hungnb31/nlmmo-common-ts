@@ -20,3 +20,11 @@ export * from "./interfaces/auth/requestEntity.interface";
 // EXPORT HELPERS
 export * from "./helpers";
 export * from "./helpers/successResponse";
+
+// EXPORT GUARDS
+export * from "./guards/admin.guard";
+export * from "./guards/jwt-auth.guard";
+export * from "./guards/jwt-refresh-auth.guard";
+export * from "./guards/shop-exist.guard";
+export * from "./guards/super-admin.guard";
+export * from "./guards/user.guard";
