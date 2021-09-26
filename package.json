@@ -1,22 +1,32 @@
 {
   "name": "@nlmmo/common-ts",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Shard Logic code between services in nlmmo",
   "main": "./build/index.js",
   "types": "module",
   "publishConfig": {
-    "access": "public",
-    "directory": "build"
+    "access": "public"
   },
   "files": [
-    "build/*.js",
-    "build/**/&.js"
+    "build"
   ],
   "exports": {
-    "./constants": "./build/constants/index.js",
-    "./guards": "./build/guards/index.js",
-    "./interfaces": "./build/interfaces/index.js",
-    "./helpers": "./build/helpers/index.js"
+    "./constants": {
+      "types": "./build/constants/index.d.ts",
+      "default": "./build/constants/index.js"
+    },
+    "./guards": {
+      "types": "./build/guards/index.d.ts",
+      "default": "./build/guards/index.js"
+    },
+    "./interfaces": {
+      "types": "./build/interfaces/index.d.ts",
+      "default": "./build/interfaces/index.js"
+    },
+    "./helpers": {
+      "types": "./build/helpers/index.d.ts",
+      "default": "./build/helpers/index.js"
+    }
   },
   "scripts": {
     "clean": "del ./build/*",
