@@ -1,6 +1,6 @@
 {
   "name": "@nlmmo/common-ts",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Shard Logic code between services in nlmmo",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
