@@ -29,6 +29,7 @@
   "dependencies": {
     "@nestjs/common": "^8.0.7",
     "@nestjs/core": "^8.0.7",
+    "express": "^4.17.1",
     "lodash.update": "^4.10.2",
     "mongoose": "^6.0.7",
     "rxjs": "^7.3.0"
