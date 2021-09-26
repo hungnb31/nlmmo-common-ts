@@ -1,6 +1,6 @@
 import { Document, Types } from "mongoose";
 
-export interface AccountSetting extends Document {
+export interface IAccountSetting extends Document {
   readonly id: string;
   whichOwner: string;
   owner: string;

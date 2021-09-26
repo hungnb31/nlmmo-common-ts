@@ -1,10 +1,10 @@
-import { Document } from 'mongoose'
+import { Document } from "mongoose";
 
-export interface UserCard extends Document {
-  readonly id: string
-  shop: string
-  owner: string
-  cardHolder: string
-  cardNumber: string
-  bank: string
+export interface IUserCard extends Document {
+  readonly id: string;
+  shop: string;
+  owner: string;
+  cardHolder: string;
+  cardNumber: string;
+  bank: string;
 }

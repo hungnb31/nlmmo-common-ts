@@ -1,8 +1,8 @@
-import { Document } from 'mongoose'
+import { Document } from "mongoose";
 
-export interface Category extends Document {
-  readonly id: string
-  title: string
-  baseImage: string
-  homepageImage: string
+export interface ICategory extends Document {
+  readonly id: string;
+  title: string;
+  baseImage: string;
+  homepageImage: string;
 }

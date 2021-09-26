@@ -1,9 +1,9 @@
-import { Document } from 'mongoose'
+import { Document } from "mongoose";
 
-export interface Affiliate extends Document {
-  readonly id: string
-  referralFrom: string
-  referralTo: string
-  rewardCoin: number
-  archivements: string[]
+export interface IAffiliate extends Document {
+  readonly id: string;
+  referralFrom: string;
+  referralTo: string;
+  rewardCoin: number;
+  archivements: string[];
 }
