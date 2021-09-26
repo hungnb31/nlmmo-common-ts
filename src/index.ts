@@ -14,6 +14,8 @@ export * from "./interfaces/system-transaction.interface";
 export * from "./interfaces/user-card.interface";
 export * from "./interfaces/user.interface";
 export * from "./interfaces/wallet.interface";
+export * from "./interfaces/auth/payload.interface";
+export * from "./interfaces/auth/requestEntity.interface";
 
 // EXPORT HELPERS
 export * from "./helpers";
