@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { Response } from "express";
 
 @Injectable()
-export class SuccessResponse {
+export class ISuccessResponse {
   build(
     res: Response,
     statusCode: number,
