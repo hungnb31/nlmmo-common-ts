@@ -10,6 +10,12 @@
   "files": [
     "build/**/*"
   ],
+  "exports": {
+    "./constants": "./build/constants/index.js",
+    "./guards": "./build/guards/index.js",
+    "./interfaces": "./build/interfaces/index.js",
+    "./helpers": "./build/helpers/index.js"
+  },
   "scripts": {
     "clean": "del ./build/*",
     "build": "npm run clean && tsc",
