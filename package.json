@@ -1,0 +1,30 @@
+{
+  "name": "@nlmmo/common-ts",
+  "version": "0.0.1",
+  "description": "Shard Logic code between services in nlmmo",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "git add . && git cm -am 'updated' && git push && npm version patch && npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungnb31/nlmmo-common-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungnb31/nlmmo-common-ts/issues"
+  },
+  "homepage": "https://github.com/hungnb31/nlmmo-common-ts#readme",
+  "dependencies": {
+    "@nestjs/common": "^8.0.7",
+    "@nestjs/core": "^8.0.7",
+    "lodash.update": "^4.10.2",
+    "mongoose": "^6.0.7",
+    "rxjs": "^7.3.0"
+  }
+}
