@@ -4,6 +4,12 @@
   "description": "Shard Logic code between services in nlmmo",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "clean": "del ./build/*",
     "build": "npm run clean && tsc",
@@ -14,8 +20,8 @@
     "url": "git+https://github.com/hungnb31/nlmmo-common-ts.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "hungnb31@gmail.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hungnb31/nlmmo-common-ts/issues"
   },
@@ -26,5 +32,6 @@
     "lodash.update": "^4.10.2",
     "mongoose": "^6.0.7",
     "rxjs": "^7.3.0"
-  }
+  },
+  "devDependencies": {}
 }
