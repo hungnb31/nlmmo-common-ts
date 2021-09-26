@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "Shard Logic code between services in nlmmo",
   "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "types": "module",
   "publishConfig": {
     "access": "public"
   },
