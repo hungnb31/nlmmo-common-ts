@@ -1,15 +1,12 @@
 {
   "name": "@nlmmo/common-ts",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Shard Logic code between services in nlmmo",
   "main": "./build/index.js",
-  "types": "module",
+  "types": "./build/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "build"
-  ],
   "exports": {
     "./constants": {
       "types": "./build/constants/index.d.ts",
