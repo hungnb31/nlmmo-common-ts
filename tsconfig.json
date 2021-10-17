@@ -17,7 +17,11 @@
       "@constants": ["src/constants"],
       "@constants/*": ["src/constants/*"],
       "@helpers": ["src/helpers"],
-      "@helpers/*": ["src/helpers/*"]
+      "@helpers/*": ["src/helpers/*"],
+      "@dtos": ["src/dtos"],
+      "@dtos/*": ["src/dtos/*"],
+      "@interceptors": ["src/interceptors"],
+      "@interceptors/*": ["src/interceptors/*"]
     }
   }
 }

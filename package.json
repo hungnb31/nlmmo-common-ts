@@ -27,6 +27,8 @@
     "@nestjs/common": "^8.0.8",
     "@nestjs/passport": "^8.0.1",
     "@nestjs/platform-express": "^8.0.8",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
     "lodash.update": "^4.10.2",
     "mongoose": "^6.0.8",
     "passport": "^0.5.0",
